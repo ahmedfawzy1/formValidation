@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>signup</title>
+</head>
+
+<body>
+    <div class="container my-5 text-center">
+        <div class="content">
+            <div class="login-image">
+                <img src="images/img-01.webp" alt="img">
+            </div>
+            <div class="form w-50">
+                <h1>Member SignUp</h1>
+                <div class="email position-relative d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa-solid fa-user position-absolute"></i>
+                    <input type="text" id="signupName" class="form-control my-3" placeholder="Enter Your Name">
+                </div>
+                <p id="nameError"></p>
+                <div class="email position-relative d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa-solid fa-envelope position-absolute"></i>
+                    <input type="text" id="signupEmail" class="form-control my-3" placeholder="Enter Your Email">
+                </div>
+                <p id="emailError"></p>
+                <div class="email position-relative d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa-solid fa-lock position-absolute"></i>
+                    <input type="password" id="signupPassword" class="form-control my-3"
+                        placeholder="Enter Your Password">
+                </div>
+                <p id="passwordError"></p>
+                <p id="wrong" class="text-danger m-3"></p>
+                <button onclick="signUp()" class="btn btn-primary w-100 my-3 py-2 rounded-5">Sign Up</button>
+                <p class="text-danger-emphasis">Don’t have an account? <a href="index.html"
+                        class="text-danger-emphasis text-decoration-none">Sign In</a>
+                </p>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+body {
+  background: linear-gradient(#0009, #0009), url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+h1 {
+  color: #17a2b8;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0 transparent !important;
+}
+
+p {
+  color: #ff3860;
+  font-size: 14px;
+  margin: 0;
+}
+
+.theme {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .content {
+  width: 1050px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 177px 130px 177px 95px;
+}
+.container .content .login-image img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .container .content {
+    padding: 100px 15px 33px;
+    justify-content: center;
+    gap: 50px;
+  }
+  .container .content .image {
+    width: 35%;
+  }
+  .container .content .form {
+    width: 100% !important;
+  }
+}
+
+.container .content .form h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 54px;
+}
+
+.container .content .form input {
+  font-size: 15px;
+  color: #666;
+  background-color: #e6e6e6 !important;
+  border-radius: 25px;
+  height: 50px;
+  padding: 0 30px 0 68px;
+}
+.container .content .form input::placeholder {
+  color: #666 !important;
+}
+
+.container .content .form i {
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
